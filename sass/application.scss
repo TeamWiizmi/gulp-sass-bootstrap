@@ -1,6 +1,9 @@
 // you can override bootstrap variables
 $brand-primary: #003399;
-$brand-info: pink;
+$brand-info: #FF3399;
+$state-info-bg: #FF3399;
+$state-info-text: white;
+
 $navbar-default-bg: $brand-primary;
 $navbar-default-link-color: #fff;
 $navbar-default-link-hover-color: #ccc;
@@ -9,13 +12,20 @@ $navbar-default-link-hover-color: #ccc;
 // import bootstrap core
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
 
-// write your own css
-body {
+// write your own css in bem style
 
-}
+.post {
+  padding: 1rem;
+  background-color: $gray-lighter;
+  margin: $line-height-computed 0;
+  .post__title {
+    font-size: $font-size-h1;
+  }
 
-p {
-
+  &--sticky {
+    background-color: $brand-info;
+    color: white;
+  }
 }
 
 // import other css
