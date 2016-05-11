@@ -2,21 +2,21 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-// var livereload = require('gulp-livereload');
-// var autoprefixer = require('gulp-autoprefixer');
+var livereload = require('gulp-livereload');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    // .pipe(autoprefixer({
-    //   browsers: ['last 2 versions'],
-    //   cascade: false
-    // }))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('./css'))
-    // .pipe( livereload() );
+    .pipe( livereload() );
 });
 
 gulp.task('sass:watch', function () {
-  // livereload.listen();
+  livereload.listen();
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
