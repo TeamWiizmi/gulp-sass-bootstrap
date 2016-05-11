@@ -6,6 +6,7 @@ https://github.com/joyent/node/wiki/installation
 You need to checkout this repo and install node modules at first
 ```sh
 git clone https://github.com/TeamWiizmi/gulp-sass-bootstrap
+npm install --global gulp-cli
 npm install
 ```
 
