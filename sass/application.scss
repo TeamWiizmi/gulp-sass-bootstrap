@@ -1,7 +1,9 @@
-// your own sass variables
-$bg-color: red;
+// you can override bootstrap variables
+$brand-primary: #003399;
+$navbar-default-bg: $brand-primary;
+$navbar-default-link-color: #fff;
+$navbar-default-link-hover-color: #ccc;
 
-// your custom css
-body {
-  background: $bg-color;
-}
+
+// import bootstrap core
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
