@@ -1,5 +1,6 @@
 // you can override bootstrap variables
 $brand-primary: #003399;
+$brand-info: pink;
 $navbar-default-bg: $brand-primary;
 $navbar-default-link-color: #fff;
 $navbar-default-link-hover-color: #ccc;
@@ -7,3 +8,15 @@ $navbar-default-link-hover-color: #ccc;
 
 // import bootstrap core
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+
+// write your own css
+body {
+
+}
+
+p {
+
+}
+
+// import other css
+@import "typography/headings.scss";
