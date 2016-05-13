@@ -1,32 +1,70 @@
-// you can override bootstrap variables
-$brand-primary: #003399;
-$brand-info: #FF3399;
-$state-info-bg: #FF3399;
-$state-info-text: white;
+// import bootstrap core and other libs
+@import "../node_modules/google-material-color/dist/palette.scss";
+@import "../node_modules/modularscale-sass/stylesheets/modular-scale";
+// modular scale settings
+$ms-base: 1rem;
+$ms-fluid: true;
+$ms-ratio: 1.25;
 
-$navbar-default-bg: $brand-primary;
-$navbar-default-link-color: #fff;
-$navbar-default-link-hover-color: #ccc;
-
-
-// import bootstrap core
+// bootstrap settings
+$navbar-default-bg: palette(Blue, 800);
+$navbar-default-link-color: palette(Grey, 100);
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
 
+
 // write your own css in bem style
+// import other css
 
-.post {
-  padding: 1rem;
-  background-color: $gray-lighter;
-  margin: $line-height-computed 0;
-  .post__title {
-    font-size: $font-size-h1;
-  }
-
-  &--sticky {
-    background-color: $brand-info;
-    color: white;
-  }
+html {
+  font-size: 16px;
 }
 
-// import other css
+body {
+  font-size: 1rem;
+}
+
+.color {
+  padding: 2em;
+}
+
+.color-primary {
+  background: palette(Blue, 500);
+}
+
+.color-primary--lighter {
+  background: palette(Blue, 300);
+}
+
+.color-primary--lightest {
+  background: palette(Blue, 100);
+}
+
+.color-primary--darker {
+  background: palette(Blue, 700);
+}
+
+.color-primary--darkest {
+  background: palette(Blue, 800);
+}
+
+.color-accent {
+  background: palette(Pink, 500);
+}
+
+.color-accent--lighter {
+  background: palette(Pink, 300);
+}
+
+.color-accent--lightest {
+  background: palette(Pink, 100);
+}
+
+.color-accent--darker {
+  background: palette(Pink, 700);
+}
+
+.color-accent--darkest {
+  background: palette(Pink, 800);
+}
+
 @import "typography/headings.scss";

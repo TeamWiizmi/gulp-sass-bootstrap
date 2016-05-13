@@ -10,9 +10,11 @@
   "license": "ISC",
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
+    "google-material-color": "^1.2.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^2.3.1"
+    "gulp-sass": "^2.3.1",
+    "modularscale-sass": "^2.1.1"
   }
 }
