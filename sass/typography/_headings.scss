@@ -1,25 +1,59 @@
 /* This is a partial scss */
+@import "../node_modules/modularscale-sass/stylesheets/modular-scale";
+// modular scale settings
+// reference: https://github.com/modularscale/modularscale-sass
+
+$ms-base: 1rem;
+$ms-fluid: false;
+
+$ms-range:
+  $minor-third    $screen-sm-min,
+  $fourth         $screen-md-min,
+  $golden         $screen-lg-min;
+
+
+html {
+  font-size: 100%; // reset to default font size 16px;
+  line-height: 1.5em; // 24px;
+  body {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: $screen-md-min) {
+  html {
+    font-size: 112.5%; //18px
+  }
+}
+
+
+@media (min-width: $screen-lg-min) {
+  html {
+    font-size: 125%; //20px
+  }
+}
 
 h1 {
-  font-size: ms(4);
+  @include ms-respond(font-size, 4);
 }
 
 h2 {
-  font-size: ms(3);
+  @include ms-respond(font-size, 3);
 }
 
 h3 {
-  font-size: ms(2);
+  @include ms-respond(font-size, 2);
 }
 
 h4 {
-  font-size: ms(1);
+  @include ms-respond(font-size, 1);
 }
 
 h5 {
-  font-size: ms(0);
+  @include ms-respond(font-size, 0);
 }
 
 h6 {
-  font-size: ms(-1);
+  @include ms-respond(font-size, -1);
 }

@@ -1,11 +1,5 @@
 // import bootstrap core and other libs
 @import "../node_modules/google-material-color/dist/palette.scss";
-@import "../node_modules/modularscale-sass/stylesheets/modular-scale";
-// modular scale settings
-$ms-base: 1rem;
-$ms-fluid: true;
-$ms-ratio: 1.25;
-
 // bootstrap settings
 $navbar-default-bg: palette(Blue, 800);
 $navbar-default-link-color: palette(Grey, 100);
@@ -14,14 +8,6 @@ $navbar-default-link-color: palette(Grey, 100);
 
 // write your own css in bem style
 // import other css
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-size: 1rem;
-}
 
 .color {
   padding: 2em;
