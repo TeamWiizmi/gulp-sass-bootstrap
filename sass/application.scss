@@ -8,49 +8,60 @@ $navbar-default-link-color: palette(Grey, 100);
 
 // write your own css in bem style
 // import other css
+$color-primary: palette(Blue, 500);
+$color-primary--lighter: palette(Blue, 300);
+$color-primary--lightest: palette(Blue, 100);
+$color-primary--darker: palette(Blue, 700);
+$color-primary--darkest: palette(Blue, 800);
+$color-accent: palette(Pink, 500);
+$color-accent--lighter: palette(Pink, 300);
+$color-accent--lightest: palette(Pink, 100);
+$color-accent--darker: palette(Pink, 700);
+$color-accent--darkest: palette(Pink, 800);
+
 
 .color {
   padding: 2em;
 }
 
 .color-primary {
-  background: palette(Blue, 500);
+  background: $color-primary;
 }
 
 .color-primary--lighter {
-  background: palette(Blue, 300);
+  background: $color-primary--lighter;
 }
 
 .color-primary--lightest {
-  background: palette(Blue, 100);
+  background: $color-primary--lightest;
 }
 
 .color-primary--darker {
-  background: palette(Blue, 700);
+  background: $color-primary--darker;
 }
 
 .color-primary--darkest {
-  background: palette(Blue, 800);
+  background: $color-primary--darkest;
 }
 
 .color-accent {
-  background: palette(Pink, 500);
+  background: $color-accent;
 }
 
 .color-accent--lighter {
-  background: palette(Pink, 300);
+  background: $color-accent--lighter;
 }
 
 .color-accent--lightest {
-  background: palette(Pink, 100);
+  background: $color-accent--lightest;
 }
 
 .color-accent--darker {
-  background: palette(Pink, 700);
+  background: $color-accent--darker;
 }
 
 .color-accent--darkest {
-  background: palette(Pink, 800);
+  background: $color-accent--darkest;
 }
 
 @import "typography/headings.scss";
