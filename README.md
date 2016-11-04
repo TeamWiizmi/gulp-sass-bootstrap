@@ -19,3 +19,9 @@ Fireup a PHP simple server and see the result
 ```sh
 php -S localhost:3000
 ```
+
+### Using Docker and Docker Compose
+```sh
+docker-compose run --rm app npm install
+docker-compose run --rm app gulp sass:watch
+```
